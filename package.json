@@ -1,6 +1,6 @@
 {
   "name": "debugsmart",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "debug your JavaScript the smart way",
   "main": "index.js",
   "scripts": {
