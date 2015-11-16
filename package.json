@@ -1,5 +1,5 @@
 {
-  "name": "debugsmart",
+  "name": "smartdebug",
   "version": "0.0.2",
   "description": "debug your JavaScript the smart way",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pushrocks/debugsmart.git"
+    "url": "https://github.com/pushrocks/smartdebug.git"
   },
   "keywords": [
     "json",
@@ -21,9 +21,9 @@
   "author": "Smart Coordination GmbH <office@push.rocks> (https://push.rocks)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pushrocks/debugsmart/issues"
+    "url": "https://github.com/pushrocks/smartdebug/issues"
   },
-  "homepage": "https://github.com/pushrocks/debugsmart",
+  "homepage": "https://github.com/pushrocks/smartdebug",
   "dependencies": {
     "beautylog": "^1.0.3",
     "colors": "^1.1.2"
