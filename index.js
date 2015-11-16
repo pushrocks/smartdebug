@@ -1,15 +1,15 @@
 /// <reference path="typings/tsd.d.ts" />
-var beautylog = require("beautylog");
+var beautylog = require("beautylog")("os");
 var colors = require("colors");
 var debugActive = false;
-var smartdebug = {
+var smartDebug = {
     log: function (message) {
         if (debugActive) {
-            beautylog.log("Debug:".zebra + ' ' + message);
+            beautylog.log("###DEBUG:###".rainbow + ' ' + message);
         }
     },
     activate: function (debugArg) {
         debugActive = debugArg;
     }
 };
-module.exports = smartdebug;
+module.exports = smartDebug;
