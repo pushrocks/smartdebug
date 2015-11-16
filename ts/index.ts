@@ -3,7 +3,7 @@ var beautylog = require("beautylog");
 var colors = require("colors");
 
 var debugActive:boolean = false;
-var debugsmart = {
+var smartdebug = {
     log: function(message:string){
         if (debugActive) {
             beautylog.log("Debug:".zebra + ' ' + message);
@@ -14,4 +14,4 @@ var debugsmart = {
     }
 };
 
-module.exports = debugsmart;
+module.exports = smartdebug;

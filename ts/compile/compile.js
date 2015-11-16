@@ -12,7 +12,16 @@ gulp.task('compileTS', function() {
 	return stream;
 });
 
-gulp.task('default',['compileTS'], function() {
+gulp.task('compileTSTest', function() {
+	var stream = gulp.src('../test.ts')
+			.pipe(gulpTypescript({
+				out: "test.js"
+			}))
+			.pipe(gulp.dest("../../"));
+	return stream;
+});
+
+gulp.task('default',['compileTS','compileTSTest'], function() {
 	pr.beautylog.success('Typescript compiled');
 });
 
