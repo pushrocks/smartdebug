@@ -16,3 +16,5 @@ smartDebug.activate(true);
 smartDebug.log("This debug message is shown");
 ```
 
+The above code produces debug messages like this:
+![debugmessage.png](https://mediaserve.lossless.digital/github.com/pushrocks/smartdebug/debugmessage.png)
