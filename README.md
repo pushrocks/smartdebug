@@ -1,8 +1,9 @@
 # smartdebug
-works with gulp, but does nothing. Use it to bootstrap your own gulp plugin with TypeScript, Travis and npm.
+debug your JavaScript the smart way
 
 ### Buildstatus/Dependencies
 [![Build Status](https://travis-ci.org/pushrocks/smartdebug.svg?branch=master)](https://travis-ci.org/pushrocks/smartdebug)
+[![Dependency Status](https://david-dm.org/pushrocks/smartdebug.svg)](https://david-dm.org/pushrocks/smartdebug)
 [![devDependency Status](https://david-dm.org/pushrocks/smartdebug/dev-status.svg)](https://david-dm.org/pushrocks/smartdebug#info=devDependencies)
 
 ### Usage
