@@ -1,6 +1,6 @@
 {
   "name": "smartdebug",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "debug your JavaScript the smart way",
   "main": "index.js",
   "scripts": {
