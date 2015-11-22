@@ -10,6 +10,9 @@ var smartDebug = {
     },
     activate: function (debugArg) {
         debugActive = debugArg;
+    },
+    getStatus: function () {
+        return debugActive;
     }
 };
 module.exports = smartDebug;

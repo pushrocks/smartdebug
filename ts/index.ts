@@ -11,6 +11,9 @@ var smartDebug = {
     },
     activate: function(debugArg:boolean){
         debugActive = debugArg;
+    },
+    getStatus: function(){
+        return debugActive;
     }
 };
 
