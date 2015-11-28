@@ -13,7 +13,7 @@ var smartDebug = {
         if (debugActive) {
             functionArg();
         }
-    }
+    },
     activate: function(debugArg:boolean){
         debugActive = debugArg;
     },
