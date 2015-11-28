@@ -9,6 +9,11 @@ var smartDebug = {
             beautylog.log("###DEBUG:###".rainbow + ' ' + message);
         }
     },
+    run: function(functionArg) {
+        if (debugActive) {
+            functionArg();
+        }
+    }
     activate: function(debugArg:boolean){
         debugActive = debugArg;
     },
