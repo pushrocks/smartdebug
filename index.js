@@ -15,6 +15,7 @@ var smartDebug = {
     },
     activate: function (debugArg) {
         debugActive = debugArg;
+        beautylog.log("#### ".rainbow + "!!! ".red + "Debugging has been activated!".blue + " !!!".red + " ####".rainbow);
     },
     getStatus: function () {
         return debugActive;
