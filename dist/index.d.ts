@@ -1,9 +1,10 @@
 export declare class SmartDebug {
+    debugLogFunction: any;
     private debugEnabled;
     /**
      * enables debugging output
      */
-    enableDebugging(): void;
+    enableDebugging(debugLogFunction?: any): void;
     /**
      * logs a message based on the contraints of the SmartDebug instance
      */
