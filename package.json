@@ -1,36 +1,18 @@
 {
   "name": "smartdebug",
-  "version": "0.0.10",
-  "description": "debug your JavaScript the smart way",
-  "main": "index.js",
-  "scripts": {
-    "test": "(cd ts/compile && node compile.js) && (node test.js)",
-    "reinstall": "(rm -r node_modules && npm install)",
-    "release": "(git pull origin master && npm version patch && git push origin master && git checkout release && git merge master && git push origin release && git checkout master)",
-    "startdev": "(git checkout master && git pull origin master)"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/pushrocks/smartdebug.git"
-  },
-  "keywords": [
-    "json",
-    "jade",
-    "template"
-  ],
-  "author": "Smart Coordination GmbH <office@push.rocks> (https://push.rocks)",
+  "version": "1.0.1",
+  "description": "debug the smart way",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "author": "Lossless GmbH",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/pushrocks/smartdebug/issues"
+  "scripts": {
+    "test": "(npmts)"
   },
-  "homepage": "https://github.com/pushrocks/smartdebug",
+   "devDependencies": {
+    "tapbundle": "^1.0.13"
+  },
   "dependencies": {
-    "beautylog": "^1.0.3",
-    "colors": "^1.1.2"
-  },
-  "devDependencies": {
-    "gulp": "3.9.0",
-    "gulp-typescript": "2.9.2",
-    "pushrocks": "^1.0.22"
+    "typings-global": "^1.0.16"
   }
 }

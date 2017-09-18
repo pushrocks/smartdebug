@@ -1,26 +1,22 @@
-/// <reference path="typings/tsd.d.ts" />
-var beautylog = require("beautylog")("os");
-var colors = require("colors");
+import * as plugins from './smartdebug.plugins'
 
-var debugActive:boolean = false;
-var smartDebug = {
-    log: function(message:string){
-        if (debugActive) {
-            beautylog.log("###DEBUG:###".rainbow + ' ' + message);
-        }
-    },
-    run: function(functionArg) {
-        if (debugActive) {
-            functionArg();
-        }
-    },
-    activate: function(debugArg:boolean){
-        debugActive = debugArg;
-        beautylog.log("#### ".rainbow + "!!! ".red + "Debugging has been activated!".blue + " !!!".red + " ####".rainbow);
-    },
-    getStatus: function(){
-        return debugActive;
+export class SmartDebug {
+  private debugEnabled: boolean = false
+
+  /**
+   * enables debugging output
+   */
+  enableDebugging () {
+    this.debugEnabled = true
+  }
+
+  /**
+   * logs a message based on the contraints of the SmartDebug instance
+   */
+  log (logObject: any) {
+    if (this.debugEnabled) {
+      console.log(logObject)
     }
-};
+  }
 
-module.exports = smartDebug;
+}
