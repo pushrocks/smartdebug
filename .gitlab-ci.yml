@@ -25,7 +25,7 @@ testLEGACY:
   script:
   - npmci node install legacy
   - npmci npm install
-#  - npmci npm test
+  - npmci npm test
   coverage: /\d+.?\d+?\%\s*coverage/
   tags:
   - docker
