@@ -4,7 +4,10 @@ export declare class SmartDebug {
     /**
      * enables debugging output
      */
-    enableDebugging(debugLogFunction?: any): void;
+    enableDebugging(debugLogFunction?: {
+        (message?: any, ...optionalParams: any[]): void;
+        (message?: any, ...optionalParams: any[]): void;
+    }): void;
     /**
      * logs a message based on the contraints of the SmartDebug instance
      */

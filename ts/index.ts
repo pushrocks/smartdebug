@@ -7,7 +7,7 @@ export class SmartDebug {
   /**
    * enables debugging output
    */
-  enableDebugging (debugLogFunction = null) {
+  enableDebugging (debugLogFunction = console.log) {
     this.debugEnabled = true
     this.debugLogFunction = debugLogFunction
   }
