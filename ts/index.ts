@@ -1,22 +1,39 @@
-import * as plugins from './smartdebug.plugins'
+import * as plugins from './smartdebug.plugins';
 
 export class SmartDebug {
-  private debugEnabled: boolean = false
+  private _debugEnabled: boolean = false;
+  get debugEnabled () {
+    return this._debugEnabled;
+  }
 
   /**
    * enables debugging output
    */
-  enableDebugging () {
-    this.debugEnabled = true
+  public enableDebugging() {
+    this._debugEnabled = true;
+  }
+
+  /**
+   * disables debugging
+   */
+  public disableDebugging() {
+    this._debugEnabled = false;
   }
 
   /**
    * logs a message based on the contraints of the SmartDebug instance
    */
-  log (logObject: any) {
-    if (this.debugEnabled) {
-      console.log(logObject)
+  public log(logObject: any) {
+    if (this._debugEnabled) {
+      // tslint:disable-next-line:no-console
+      console.log(logObject);
     }
   }
 
+  /**
+   * a function returning 
+   */
+  public isDebugMode() {
+    return this._debugEnabled;
+  }
 }

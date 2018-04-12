@@ -1,1 +1,1 @@
-import 'typings-global';
+export {  };
