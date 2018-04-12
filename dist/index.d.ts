@@ -1,5 +1,6 @@
 export declare class SmartDebug {
     private _debugEnabled;
+    constructor(debugTopic?: string);
     readonly debugEnabled: boolean;
     /**
      * enables debugging output

@@ -1,3 +1,4 @@
+// tslint:disable-next-line:no-implicit-dependencies
 import { expect, tap } from 'tapbundle';
 import * as smartdebug from '../ts/index';
 

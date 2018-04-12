@@ -2,7 +2,17 @@ import * as plugins from './smartdebug.plugins';
 
 export class SmartDebug {
   private _debugEnabled: boolean = false;
-  get debugEnabled () {
+
+  constructor(debugTopic?: string) {
+    if (
+      process.env.SMARTDEBUG === 'true' ||
+      (debugTopic && process.env.SMARTDEBUG_TOPIC === debugTopic)
+    ) {
+      this.enableDebugging();
+    }
+  }
+
+  get debugEnabled() {
     return this._debugEnabled;
   }
 
@@ -10,6 +20,7 @@ export class SmartDebug {
    * enables debugging output
    */
   public enableDebugging() {
+    console.log('Enabled Debugging!');
     this._debugEnabled = true;
   }
 
@@ -31,7 +42,7 @@ export class SmartDebug {
   }
 
   /**
-   * a function returning 
+   * a function returning
    */
   public isDebugMode() {
     return this._debugEnabled;
