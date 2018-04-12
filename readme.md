@@ -21,6 +21,18 @@ debug the smart way
 ## Usage
 Use TypeScript for best in class instellisense.
 
+```typescript
+import * as smartdebug from '@pushrocks/smartdebug';
+
+smartdebug.log('a cool message') // won't log
+smartdebug.enableDebugging();
+smartdebug.log('another cool message') // this message will log
+
+if(smartdebug.debugEnabled) {
+  console.log('Hi there!') // will also log since debugging is enabled
+}
+```
+
 For further information read the linked docs at the top of this README.
 
 >  licensed | **&copy;** [Lossless GmbH](https://lossless.gmbh)
