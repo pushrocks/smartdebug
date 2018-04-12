@@ -1,6 +1,6 @@
 {
   "name": "@pushrocks/smartdebug",
-  "version": "2.0.8",
+  "version": "2.0.9",
   "description": "debug the smart way",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
